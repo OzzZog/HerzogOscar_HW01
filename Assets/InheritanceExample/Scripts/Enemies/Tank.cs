@@ -8,9 +8,8 @@ public class Tank : EnemyBase
 
     protected override void OnHit()
     {
-        
+        duration += 1f;
         StartCoroutine(StopMoving());
-        
     }
     
     private IEnumerator StopMoving()
